@@ -1,15 +1,11 @@
 import React, { useState } from "react"
 // import IngredientsBtn from "./ingredientsBtn";
 
-
-
-
-
 const Book = (props) => {
 
     const [isOpen, setIsOpen] = useState(false)
     const { img, title, ingredients } = props;
-    const ingredientsArr = ingredients;
+
 
     // Used this functions to test 
     const ingredientsMap = () => {
@@ -21,23 +17,6 @@ const Book = (props) => {
                     {console.log(typeof ingredient)}
                 </main>
             )
-        })
-    }
-    const ingredientsForEach = () => {
-        ingredientsArr.forEach((ingredient) => {
-            return (
-                <div>
-                    <p>Hello</p>
-                    <p>{ingredient}</p>
-                    {console.log(ingredient)}
-                    {/* {console.log(typeof ingredient)} */}
-                </div>
-            )
-        })
-    }
-    const forEachFunction = (arr) => {
-        arr.forEach((ingredient) => {
-            <p>{ingredient}</p>
         })
     }
     const testParagraph = () => {
@@ -57,7 +36,7 @@ const Book = (props) => {
             <button onClick={() => setIsOpen(!isOpen)} className="btn">Receta</button>
             {console.log(props)}
             <div>
-                {testParagraph()}
+                {isOpen && testParagraph()}
                 {/* I have test paregraph just for testing but the map is not */}
                 {/* {ingredientsMap()} */}
 
