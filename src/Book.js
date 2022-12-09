@@ -11,7 +11,7 @@ const Book = (props) => {
     const { img, title, ingredients } = props;
     const ingredientsArr = ingredients;
 
-
+    // Used this functions to test 
     const ingredientsMap = () => {
         ingredients.map((ingredient) => {
             return (
@@ -23,8 +23,6 @@ const Book = (props) => {
             )
         })
     }
-
-
     const ingredientsForEach = () => {
         ingredientsArr.forEach((ingredient) => {
             return (
@@ -37,14 +35,11 @@ const Book = (props) => {
             )
         })
     }
-
     const forEachFunction = (arr) => {
         arr.forEach((ingredient) => {
             <p>{ingredient}</p>
         })
     }
-
-
     const testParagraph = () => {
         return (
             <div >
@@ -62,10 +57,9 @@ const Book = (props) => {
             <button onClick={() => setIsOpen(!isOpen)} className="btn">Receta</button>
             {console.log(props)}
             <div>
-                {ingredients.map((ingredient) => {
-                    <p>{ingredient}</p>
-                    // { console.log(ingredient) }
-                })}
+                {testParagraph()}
+                {/* I have test paregraph just for testing but the map is not */}
+                {/* {ingredientsMap()} */}
 
             </div>
 
