@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header>
             <a href='#'>
-                <p class='fas fa-carrot'></p>
+                <i class="gg-bowl"></i>
             </a>
             <ul class='headerLinks'>
                 <li>Home</li>

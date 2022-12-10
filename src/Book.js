@@ -4,7 +4,7 @@ import React, { useState } from "react"
 const Book = (props) => {
 
     const [isOpen, setIsOpen] = useState(false)
-    const { img, title, ingredients } = props;
+    const { img, title, ingredients, cookTime } = props;
 
     const ingredient = () => {
         return (
@@ -21,7 +21,7 @@ const Book = (props) => {
 
     return (
         <article className="book">
-            <h1 className="title">{title}</h1>
+            <h1 className="title">{title} <div><i class="gg-timer"></i> <p>{cookTime}</p></div></h1>
             <img src={img} alt="" />
             <button onClick={() => setIsOpen(!isOpen)} className="btn">Receta</button>
             <div>
