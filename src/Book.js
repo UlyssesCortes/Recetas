@@ -6,7 +6,7 @@ const Book = (props) => {
     const [isOpen, setIsOpen] = useState(false)
     const { img, title, ingredients } = props;
 
-    const testParagraph = () => {
+    const ingredient = () => {
         return (
             <div className="ingredientContainer">
                 <ul className="ingredientList">{ingredients.map((ingredient) => {
@@ -20,11 +20,11 @@ const Book = (props) => {
 
     return (
         <article className="book">
-            <h1>{title}</h1>
+            <h1 className="title">{title}</h1>
             <img src={img} alt="" />
             <button onClick={() => setIsOpen(!isOpen)} className="btn">Receta</button>
             <div>
-                <p>{isOpen && testParagraph()}</p>
+                <p>{isOpen && ingredient()}</p>
             </div>
         </article >
     )

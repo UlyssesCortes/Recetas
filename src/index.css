@@ -10,25 +10,32 @@ body {
 
 .book {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
     margin: 1em;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
+    border-radius: 0.5%;
     padding: 2em;
     gap: 5px;
     width: 320px;
+    transition: all .2s;
 }
+
+/* .book {
+    min-height: 450px;
+} */
 
 .book img {
     width: 250px;
     height: 320px;
     padding: 10px;
     object-fit: cover;
-    border-radius: 5%;
+    border-radius: 6%;
+}
+
+.book:hover {
+    transform: scale(1.01);
 }
 
 .bookList {
@@ -37,8 +44,7 @@ body {
     justify-content: center;
 }
 
-
-button {
+.btn {
     border-radius: 4px;
     background-color: #bdb2b2;
     border: none;
@@ -46,7 +52,7 @@ button {
     text-align: center;
     font-size: 14px;
     padding: 10px;
-    width: 98%;
+    width: 98.5%;
     transition: all 0.5s;
     cursor: pointer;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0, .3);
@@ -56,20 +62,33 @@ button {
 }
 
 
-button:hover {
-    /* padding: 11px; */
+.btn:hover {
     background-color: #ccc0c0;
-
-    /* padding-left: 24px; */
+    transform: scale(.98);
 }
 
 .ingredientContainer {
+    border-radius: 5%;
     padding: 25px;
-    /* padding-top: 20px; */
 }
 
 .ingredientList {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.ingredientItem {
+    transition: all 0.2s;
+}
+
+.ingredientItem:hover {
+    transform: scale(1.1);
+}
+
+.title {
+    padding-left: 10px;
+    color: #2e2a28;
+    font-family: 'Muli', sans-serif;
+    letter-spacing: 1px;
 }
