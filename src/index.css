@@ -62,3 +62,14 @@ button:hover {
 
     /* padding-left: 24px; */
 }
+
+.ingredientContainer {
+    padding: 25px;
+    /* padding-top: 20px; */
+}
+
+.ingredientList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

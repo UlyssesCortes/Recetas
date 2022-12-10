@@ -3,19 +3,17 @@ export const books = [
         id: 1,
         img: 'https://st2.depositphotos.com/1373322/7341/i/950/depositphotos_73418363-stock-photo-white-beans-in-tomato-sauce.jpg',
         title: 'Frijoles',
-        author: 'Amelia Hepworth',
         recepie: 'receta',
         ingredients: [
-            "500 gramos Frijoles negros cerca de dos tazas",
+            "500 gramos Frijoles negros",
             "8  tazas de agua",
-            "¼  de una cebolla blanca grande",
-            "2  dientes de ajo pelados",
-            "1  Rama pequeña de Epazote o unas tres hojas grandes",
+            "¼  de una cebolla blanca",
+            "2  dientes de ajo",
+            "1  Rama pequeña de Epazote",
             "1  chile serrano Opcional",
             "* Sal al gusto",
-            "1 cucharadita de manteca de cerdo o aceite de oliva."
+            "1 cucharadita de aceite de oliva"
         ]
-
     },
     {
         id: 2,

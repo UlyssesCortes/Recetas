@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-// import IngredientsBtn from "./ingredientsBtn";
+
 
 const Book = (props) => {
 
@@ -8,15 +8,14 @@ const Book = (props) => {
 
     const testParagraph = () => {
         return (
-            <div >
-                <p>{ingredients.map((ingredient) => {
+            <div className="ingredientContainer">
+                <ul className="ingredientList">{ingredients.map((ingredient) => {
                     return (
-                        <p> {"* " + ingredient}</p>
+                        <li className="ingredientItem"> {ingredient}</li>
                     )
-                })}</p>
+                })}</ul>
             </div >
         )
-
     }
 
     return (
