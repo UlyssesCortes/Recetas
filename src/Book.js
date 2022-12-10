@@ -9,11 +9,12 @@ const Book = (props) => {
     const ingredient = () => {
         return (
             <div className="ingredientContainer">
-                <ul className="ingredientList">{ingredients.map((ingredient) => {
+                {/* <ul className="ingredientList">{ingredients.map((ingredient) => {
                     return (
                         <li className="ingredientItem"> {ingredient}</li>
                     )
-                })}</ul>
+                })}</ul> */}
+                <ul className="ingredientList">{ingredients && ingredients.map((elem) => <li li className="ingredientItem">{elem}</li>)}</ul>
             </div >
         )
     }

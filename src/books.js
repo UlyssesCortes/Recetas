@@ -1,3 +1,12 @@
+// Future categories 
+/**
+ * Image top 
+ * Type of food such as backery breakfast or dinner
+ * Time to make
+ * 
+ * https://www.simplyrecipes.com/breakfast-recipes-5091541
+ */
+
 export const books = [
     {
         id: 1,
